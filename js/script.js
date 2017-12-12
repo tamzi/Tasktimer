@@ -10,7 +10,7 @@ var ding = new Audio("audio/ding.mp3"),
         // is stored here because it was annoying
         // evaluating the button text directly.
         sessionLength: {
-            value: 25,
+            value: 30,
             increase: function() {
                 this.value++;
                 $("#session-length").text(this.value);
@@ -45,9 +45,9 @@ var ding = new Audio("audio/ding.mp3"),
                 // user inputted break and session lengths.
                 // If a soft reset is not requested, then reset
                 // everything.
-                this.sessionLength.value = 25;
+                this.sessionLength.value = 30;
                 this.breakLength.value = 5;
-                $("#session-length").text(25);
+                $("#session-length").text(30);
                 $("#break-length").text(5);
             }
             this.isBreak = false;
@@ -131,7 +131,7 @@ function toggleVisible(showHide) {
         top.animate({
             height: top.height() + bottom.height() + 64
         }, 300, function() {
-            $("#message").text("Do the thing!");
+            $("#message").text("Focus on it: Don't be distracted!");
             $("#message").fadeIn(300);
         });
         bottom.slideUp(300);
