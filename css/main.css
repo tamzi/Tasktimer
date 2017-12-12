@@ -1,8 +1,70 @@
 body {
-    background: #355494;
+    background: #00000;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
     background-position: center;
+}
+/* CARD STYLES */
+
+.mdl-card {
+    width: 70%;
+    max-width: 500px;
+}
+/* PRIMARY COLOR SPACE */
+
+.mdl-card__title {
+    height: 70%;
+    max-height: 500px
+}
+#vert-menu-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#counter {
+    margin-top: 45px;
+    font-size: 80px;
+}
+#message {
+    font-size: 30px;
+    margin-top: 2.6em;
+    display: none;
+}
+.mdl-card__title {
+    display: block;
+    text-align: center;
+}
+/* OPTIONS BUTTONS */
+
+.option-row {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.5em;
+}
+.sound-row {
+    padding-right: 16px;
+}
+@media (max-width: 255px) {
+    .option-row {
+        flex-direction: column;
+    }
+}
+.option-row i {
+    font-size: 12px;
+}
+.option-row button {
+    min-width: 25px;
+}
+#session-length,
+#break-length {
+    display: inline-block;
+    width: 20px;
+    text-align: right;
+}
+/* ACTION BUTTONS */
+
+#action2 {
+    visibility: hidden;
 }
