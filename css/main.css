@@ -1,5 +1,7 @@
+/* ELEMENT STYLES */
+
 body {
-    background: #00000;
+    background: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,13 +11,13 @@ body {
 /* CARD STYLES */
 
 .mdl-card {
-    width: 70%;
+    width: 80%;
     max-width: 500px;
 }
 /* PRIMARY COLOR SPACE */
 
 .mdl-card__title {
-    height: 70%;
+    height: 80%;
     max-height: 500px
 }
 #vert-menu-button {
@@ -24,11 +26,11 @@ body {
     right: 10px;
 }
 #counter {
-    margin-top: 45px;
-    font-size: 80px;
+    margin-top: 42px;
+    font-size: 50px;
 }
 #message {
-    font-size: 30px;
+    font-size: 24px;
     margin-top: 2.6em;
     display: none;
 }
@@ -36,7 +38,7 @@ body {
     display: block;
     text-align: center;
 }
-/* OPTIONS BUTTONS */
+/* OPTIONS */
 
 .option-row {
     display: flex;
@@ -67,4 +69,37 @@ body {
 
 #action2 {
     visibility: hidden;
+}
+/* MODAL */
+
+#overlay {
+    background-color: rgba(0, 0, 0, .25);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#modal {
+    display: none;
+    margin: auto;
+    height: 320px;
+    max-width: 300px;
+    width: auto;
+}
+/* PHONE SIZE */
+
+@media (max-width: 500px) {
+    body {
+        background: white;
+        display: block;
+    }
+    #pomodoro.mdl-card {
+        max-width: 100%;
+        box-shadow: none;
+    }
 }
